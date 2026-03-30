@@ -1,0 +1,14 @@
+boards:
+  - name: eyelash_corne_left
+    vendor: eyelash_corne
+    socs: 
+        - name: nrf52480
+          variants: 
+            - name: zmk
+  - name: eyelash_corne_right
+    vendor: eyelash_corne
+    socs: 
+        - name: nrf52480
+          variants: 
+            - name: zmk
+
