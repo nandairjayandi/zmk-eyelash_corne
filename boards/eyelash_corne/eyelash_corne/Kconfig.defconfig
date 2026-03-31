@@ -24,8 +24,10 @@ config ZMK_SLEEP
 config ZMK_SPLIT
     default y
 
-# config BT_CTLR
-#     default BT
+# Note that this would be deprecated in the future
+# https://docs.nordicsemi.com/bundle/ncs-3.0.0/page/zephyr/releases/migration-guide-4.1.html#bluetooth_hci
+config BT_CTLR
+    default BT
 
 if USB
 
