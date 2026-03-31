@@ -97,6 +97,7 @@
     status = "okay";
 };
 
+# Zephyr v4.1.0 requirement
 &reg0 {
     status = "okay";
 };
