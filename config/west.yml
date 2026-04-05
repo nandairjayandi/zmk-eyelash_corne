@@ -12,8 +12,8 @@ manifest:
       revision: main
     - name: zmk
       remote: zmkfirmware
-      # revision: v0.3.0
-      revision: main
+      revision: v0.3.0
+      # revision: main
       import: app/west.yml
   self:
     path: config
