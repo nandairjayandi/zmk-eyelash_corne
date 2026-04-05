@@ -55,7 +55,7 @@
                                          &trans        &trans        &trans                                                                          &kp INS          &kp DEL          &trans
             >;
 
-            sensor-bindings = <&scroll_encoder>;
+            sensor-bindings = <&arrow_encoder>;
         };
 
         raise_layer {
@@ -67,7 +67,7 @@
                                     &trans     &trans     &kp SPACE                                                             &kp RET    &trans     &trans
             >;
 
-            sensor-bindings = <&scroll_encoder>;
+            sensor-bindings = <&arrow_encoder>;
         };
 
         layer_3 {
@@ -79,7 +79,7 @@
                                        &trans       &trans     &trans                                                                   &trans       &trans     &trans
             >;
 
-            sensor-bindings = <&scroll_encoder>;
+            sensor-bindings = <&arrow_encoder>;
         };
     };
 };
