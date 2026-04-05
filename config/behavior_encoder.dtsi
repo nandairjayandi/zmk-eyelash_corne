@@ -1,10 +1,10 @@
 #include <behaviors.dtsi>
 #include "zmk-helpers/helper.h"
 
-#define SIMPLE_MORPH(NAME, MOD, BINDING1, BINDING2) ZMK_MOD_MORPH(NAME, mods = <(MOD_L##MOD | MOD_R##MOD)>, bindings = <BINDING1>, <BINDING2>)
+#define SIMPLE_MORPH(NAME, MOD, BINDING1, BINDING2) ZMK_MOD_MORPH(NAME, mods = <(MOD_L##MOD | MOD_R##MOD)>; bindings = <BINDING1>, <BINDING2>;)
 
-SIMPLE_MORPH(ccw_morph_arrow,   CTL, &kp DOWN, &kp LEFT);
-SIMPLE_MORPH(cw_morph_arrow,    CTL, &kp UP, &kp RIGHT);
+SIMPLE_MORPH(ccw_morph_arrow,   CTL, &kp DOWN, &kp LEFT)
+SIMPLE_MORPH(cw_morph_arrow,    CTL, &kp UP, &kp RIGHT)
 
-ZMK_SENSOR_ROTATE(arrow_enc, bindings = <&cw_morph_arrow &ccw_morph_arrow>;)
+ZMK_SENSOR_ROTATE(arrow_enc, bindings = <&cw_morph_arrow>, <&ccw_morph_arrow>;)
 
