@@ -1,18 +1,28 @@
 manifest:
   remotes:
     - name: zmkfirmware
+      url-base: https://github.com/zmkfirmware
+    - name: nandairjayandi
       url-base: https://github.com/nandairjayandi
-      # Additional modules containing boards/shields/custom code can be listed here as well.
-      # See:
-      # - https://zmk.dev/docs/features/modules
-      # - https://docs.zephyrproject.org/3.5.0/develop/west/manifest.html#projects
+    - name: m165437
+      url-base: https://github.com/M165437
+    - name: urob
+      url-base: https://github.com/urob
+
   projects:
-    - name: eyelash_corne
-      url: https://github.com/a741725193/zmk-new_corne
-      revision: main
     - name: zmk
       remote: zmkfirmware
       revision: v0.3.0
       import: app/west.yml
+    - name: nice-view-gem 
+      remote: m165437 
+      revision: main
+    - name: zmk-helpers # from urob
+      remote: nandairjayandi
+      revision: main
+    - name: zmk-auto-layer
+      remote: urob
+      revision: main
+
   self:
     path: config
