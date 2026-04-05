@@ -10,6 +10,8 @@
 #include <dt-bindings/zmk/pointing.h>
 #include <dt-bindings/zmk/rgb.h>
 
+#include <behavior_encoder.dtsi>
+
 #define T_BL        &tap_bluetooth
 
 &mmv_input_listener { input-processors = <&zip_xy_scaler 2 1>; };
