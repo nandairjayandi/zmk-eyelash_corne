@@ -3,8 +3,9 @@
 # SPDX-License-Identifier: MIT
 #
 
+# https://zmk.dev/blog/2025/12/09/zephyr-4-1#adjust-kconfig-files
 config BOARD_EYELASH_CORNE_LEFT
-    depends on SOC_NRF52840_QIAA
+    select SOC_NRF52840_QIAA
 
 config BOARD_EYELASH_CORNE_RIGHT
-    depends on SOC_NRF52840_QIAA
+    select SOC_NRF52840_QIAA
