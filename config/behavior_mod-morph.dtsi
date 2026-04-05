@@ -3,4 +3,41 @@
 
 #define SIMPLE_MORPH(NAME, MOD, BINDING1, BINDING2) ZMK_MOD_MORPH(NAME, mods = <(MOD_L##MOD | MOD_R##MOD)>; bindings = <BINDING1>, <BINDING2>;)
 
-SIMPLE_MORPH(morph_comma,   SFT,    &kp COMMA, &kp QMARK)   // ,?
+SIMPLE_MORPH(morph_comma,   SFT,    &kp COMMA,      &kp QMARK)      // ,?
+SIMPLE_MORPH(morph_dot,     SFT,    &kp DOT,        &kp EXCL)       // .!
+SIMPLE_MORPH(morph_sqt,     SFT,    &kp SQT,        &kp UNDER)      // '_
+SIMPLE_MORPH(morph_min,     SFT,    &kp MINUS,      &kp DQT)        // -"
+
+#define M_COMMA &morph_comma
+#define M_DOT   &morph_dot
+#define M_SQT   &morph_sqt
+#define M_MIN   &morph_min
+
+// NUMBER layer morph
+SIMPLE_MORPH(morph_dot2,    SFT,    &kp KP_DOT,     &kp KP_COMMA)   // ., Keypad Version
+SIMPLE_MORPH(morph_fslh,    SFT,    &kp FSLH,       &kp PRCNT)      // /%
+SIMPLE_MORPH(morph_eql,     SFT,    &kp KP_EQUAL,   &kp BSLH)       // =\
+SIMPLE_MORPH(morph_star,    SFT,    &kp STAR,       &kp CARET)      // *^
+
+#define M_DOT2  &morph_dot2
+#define M_FSLH  &morph_fslh
+#define M_EQL   &morph_eql
+#define M_STAR  &morph_star
+
+SIMPLE_MORPH(morph_and,     SFT,    &kp AMPS,       &kp AT)         // &@
+SIMPLE_MORPH(morph_hash,    SFT,    &kp HASH,       &kp DLLR)       // #$
+
+#define M_AND   &morph_and
+#define M_HASH  &morph_hash
+
+SIMPLE_MORPH(morph_bral,    SFT,    &tap_bral_one,  &tap_bral_two)  // ([ {<
+SIMPLE_MORPH(morph_brar,    SFT,    &tap_brar_one,  &tap_brar_two)  // )] }>
+
+#define M_BRAL  &morph_bral
+#define M_BRAR  &morph_brar
+
+SIMPLE_MORPH(morph_bspc,    SFT,    &kp BSPC,       &kp DELETE)     // BSPC DEL
+SIMPLE_MORPH(morph_spc,     SFT,    &kp SPC,        &kp INSERT)     // SPC INS
+
+#define M_BSPC  &morph_bspc
+#define M_BSPC  &morph_spc
