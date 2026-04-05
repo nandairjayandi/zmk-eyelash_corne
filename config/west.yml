@@ -17,8 +17,11 @@ manifest:
     - name: nice-view-gem 
       remote: m165437 
       revision: v0.3.0
-    - name: zmk-helpers # from urob
-      remote: nandairjayandi
+    - name: zmk-helpers
+      remote: urob
+      revision: main
+    - name: zmk-behavior-dynamic-macros
+      remote: nandairjayandi # from bsalex
       revision: main
     - name: zmk-auto-layer
       remote: urob
