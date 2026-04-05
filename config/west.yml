@@ -16,7 +16,7 @@ manifest:
       import: app/west.yml
     - name: nice-view-gem 
       remote: m165437 
-      revision: main
+      revision: v0.3.0
     - name: zmk-helpers # from urob
       remote: nandairjayandi
       revision: main
