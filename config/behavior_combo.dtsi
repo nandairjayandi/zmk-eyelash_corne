@@ -2,6 +2,7 @@
 #include "zmk-helpers/helper.h"
 
 #include "behavior_mod-morph.dtsi"
+#include "adv_layers.dtsi"
 
 #define COMBO_TERM_FAST 18
 #define COMBO_IDLE_SLOW 30
@@ -46,6 +47,7 @@ ZMK_COMBO(com_char,             &kp LG(LS(SPACE)),  LT5 RT5,    0) // Character 
 ZMK_COMBO(com_menu,             &kp LG(LS(FSLH)),   RB1 RB3,    2) // Open Menu Bar Search Menu
 
 // VIM Navigation
+MAKE_HT(ht_kp, &kp, &kp)
 ZMK_COMBO(com_vim_word_left,    &ht_kp  HOME B,     RM1 RM2,    2) // Tap to jump one word left Hold to jump to start
 ZMK_COMBO(com_vim_word_right,   &ht_kp  END E,      RM2 RM3,    2) // Tap to jump one word right Hold to jump to end
 
