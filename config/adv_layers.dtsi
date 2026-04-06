@@ -1,0 +1,65 @@
+/* contains configuration and macro helper for layer setup */
+
+#include <behaviors.dtsi>
+
+#include "zmk-helpers/helper.h"
+
+#define QUICK_TAP_MS 175
+
+&sl {
+    release-after-ms = <0>;
+    ignore-modifiers;
+};
+
+&sk {
+  release-after-ms = <2000>;
+  // quick-release;
+  // display-name = "SK ON";
+};
+
+
+#define MAKE_HT(NAME, HOLD, TAP)                                             \
+  ZMK_HOLD_TAP(NAME, bindings = <HOLD>, <TAP>;                           \
+                flavor = "balanced";                                          \
+                tapping-term-ms = <200>; quick-tap-ms = <QUICK_TAP_MS>;)
+
+#define MAKE_HRM(NAME, HOLD, TAP, TRIGGER_POS)                                 \
+  ZMK_HOLD_TAP(NAME, bindings = <HOLD>, <TAP>; flavor = "balanced";            \
+               tapping-term-ms = <200>; quick-tap-ms = <QUICK_TAP_MS>;         \
+               require-prior-idle-ms = <90>; hold-trigger-on-release;         \
+               hold-trigger-key-positions = <TRIGGER_POS>;)
+
+
+/* Home-Row Mod Declaration */
+MAKE_HRM(hml, &kp, &kp, KEYS_R THUMBS) // Left-hand HRMs.
+MAKE_HRM(hmr, &kp, &kp, KEYS_L THUMBS) // Right-hand HRMs.
+
+/* Complex Momentary Layer and Morph */
+MAKE_HT(ht_nav_bspc, &mo, &morph_bspc)
+MAKE_HT(ht_num_spc, &mo, &morph_spc)
+
+#define SPC_NUM &ht_num_spc 1 0
+#define BSPC_NAV &ht_nav_bspc 2 0
+
+MAKE_HT(ht_comma_fn, &mo, &morph_comma)
+MAKE_HT(ht_dot_fn, &mo, &morph_dot)
+
+#define L_FN &ht_dot_fn 3 0
+#define R_FN &ht_comma_fn  3 0
+
+// MAKE_HT(ht_mo_sk, &kp, &sk) // not working somehow
+
+#define SK_STOP &kp LANG9 // cancels Sticky Key 
+
+// / {
+// 	behaviors {
+//     caps_word: caps_word {
+//       compatible = "zmk,behavior-caps-word";
+//       #binding-cells = <0>;
+//       continue-list = <BACKSPACE MINUS UNDER PERIOD SLASH PERIOD>;
+//       // ignore-modifiers; 
+//     };
+// 	};
+// };
+
+ZMK_CAPS_WORD(caps_word, continue-list = <BACKSPACE MINUS UNDER PERIOD SLASH PERIOD>;)
