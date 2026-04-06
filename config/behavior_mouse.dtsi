@@ -1,0 +1,46 @@
+#define ZMK_POINTING_DEFAULT_MOVE_VAL 2400 
+#define ZMK_MOUSE_DEFAULT_SCRL_VAL 140
+
+#include <dt-bindings/zmk/pointing.h>
+#include <input/processors.dtsi>
+#include "zmk-helpers/helper.h"
+
+// Mouse Movement Config
+&mmv_input_listener {
+   input-processors = <&zip_xy_scaler 2 1>;
+};
+
+&mmv {
+  acceleration-exponent = <1>;          // 1
+  time-to-max-speed-ms = <800>;         // 300
+  delay-ms = <0>;                       // 0
+};
+
+// Mouse Scroll Config
+&msc_input_listener {
+   input-processors = <&zip_xy_scaler 2 1>;
+};
+
+&msc {
+  acceleration-exponent = <0>;          // 0
+  time-to-max-speed-ms = <300>;         // 300
+  delay-ms = <0>;                       // 0
+};
+
+ZMK_HOLD_TAP(hold_click, bindings = <&mkp>, <&mkp>; flavor = "balanced"; tapping-term-ms = <500>; quick-tap-ms = <QUICK_TAP_MS>;)
+
+// Alias
+#define MS_U &mmv MOVE_UP
+#define MS_D &mmv MOVE_DOWN
+#define MS_L &mmv MOVE_LEFT
+#define MS_R &mmv MOVE_RIGHT
+
+#define WH_U &msc SCRL_UP
+#define WH_D &msc SCRL_DOWN
+#define WH_L &msc SCRL_LEFT
+#define WH_R &msc SCRL_RIGHT
+
+#define MS_LC &mkp LCLK
+#define MS_RC &mkp RCLK
+
+#define MS_HC &hold_click RCLK LCLK 
