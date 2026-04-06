@@ -109,5 +109,5 @@ ZMK_LAYER(GRAPHITE,
                                                  T_SUPER         BSPC_NAV     &kp TAB                                            &kp ENTER      SPC_NUM      T_SUPER
     //                                           ╰─────────────┴─────────────┴─────────────╯                                   ╰─────────────┴─────────────┴─────────────╯
 
-    , &arrow_encoder
+    , &arrow_enc
 )
