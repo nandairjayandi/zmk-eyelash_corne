@@ -40,4 +40,4 @@ SIMPLE_MORPH(morph_bspc,    SFT,    &kp BSPC,       &kp DELETE)     // BSPC DEL
 SIMPLE_MORPH(morph_spc,     SFT,    &kp SPC,        &kp INSERT)     // SPC INS
 
 #define M_BSPC  &morph_bspc
-#define M_BSPC  &morph_spc
+#define M_SPC   &morph_spc
