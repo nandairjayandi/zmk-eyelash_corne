@@ -19,7 +19,7 @@
 };
 
 
-#define MAKE_HT(NAME, HOLD, TAP) 
+#define MAKE_HT(NAME, HOLD, TAP) \
   ZMK_HOLD_TAP(NAME, \
     bindings = <HOLD>, <TAP>; \
     flavor = "balanced"; \
@@ -27,7 +27,7 @@
     quick-tap-ms = <QUICK_TAP_MS>;
   )
 
-#define MAKE_HRM(NAME, HOLD, TAP, TRIGGER_POS) 
+#define MAKE_HRM(NAME, HOLD, TAP, TRIGGER_POS) \
   ZMK_HOLD_TAP(NAME, 
     bindings = <HOLD>, <TAP>; 
     flavor = "balanced"; 
