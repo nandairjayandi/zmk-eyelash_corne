@@ -27,7 +27,7 @@
   delay-ms = <0>;                       // 0
 };
 
-ZMK_HOLD_TAP(hold_click, bindings = <&mkp RCLK>, <&mkp LCLK>; flavor = "balanced"; tapping-term-ms = <500>; quick-tap-ms = <175>;)
+// ZMK_HOLD_TAP(hold_click, bindings = <&mkp RCLK>, <&mkp LCLK>; flavor = "balanced"; tapping-term-ms = <500>; quick-tap-ms = <175>;)
 
 // Alias
 #define MS_U &mmv MOVE_UP
@@ -43,4 +43,4 @@ ZMK_HOLD_TAP(hold_click, bindings = <&mkp RCLK>, <&mkp LCLK>; flavor = "balanced
 #define MS_LC &mkp LCLK
 #define MS_RC &mkp RCLK
 
-#define MS_HC &hold_click
+// #define MS_HC &hold_click RCLK LCLK
