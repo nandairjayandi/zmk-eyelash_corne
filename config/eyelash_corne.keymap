@@ -61,7 +61,6 @@
 #include "behavior_combo.dtsi"
 #include "behavior_tap-dance.dtsi"
 #include "behavior_mod-morph.dtsi"
-#include "behavior_mod-morph.dtsi"
 #include "adv_layers.dtsi"
 
 /* Aliases */
