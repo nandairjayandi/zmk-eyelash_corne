@@ -1,5 +1,7 @@
 /* contains configuration and macro helper for layer setup */
 
+#pragma once
+
 #include <behaviors.dtsi>
 
 #include "zmk-helpers/helper.h"

@@ -61,7 +61,7 @@
 #include "behavior_combo.dtsi"
 #include "behavior_tap-dance.dtsi"
 #include "behavior_mod-morph.dtsi"
-#include "adv_layers.dtsi"
+// #include "adv_layers.dtsi"
 
 /* Aliases */
 #define T_SUPER     &tap_meh_hypr       // Tap CtlAltShift | DTap CtlAltMetaShift
