@@ -1,7 +1,11 @@
 #include <behaviors.dtsi>
 #include "zmk-helpers/helper.h"
 
-#define SIMPLE_MORPH(NAME, MOD, BINDING1, BINDING2) ZMK_MOD_MORPH(NAME, mods = <(MOD_L##MOD | MOD_R##MOD)>; bindings = <BINDING1>, <BINDING2>;)
+#define SIMPLE_MORPH(NAME, MOD, BINDING1, BINDING2) \
+    ZMK_MOD_MORPH(NAME, \
+        mods = <(MOD_L##MOD | MOD_R##MOD)>; \
+        bindings = <BINDING1>, <BINDING2>; \
+    )
 
 SIMPLE_MORPH(morph_comma,   SFT,    &kp COMMA,      &kp QMARK)      // ,?
 SIMPLE_MORPH(morph_dot,     SFT,    &kp DOT,        &kp EXCL)       // .!
