@@ -39,7 +39,11 @@ ZMK_COMBO (com_capsword,          &caps_word,         LH1 RH1,    0,          60
 ZMK_COMBO (com_esc,               &kp ESC,            LH0 RH0,    0 1 2,      80)
 
 // macOS Specific   
-/* Most of my hotkeys is managed through BetterTouchTool and takes advantage of Super(Meta Alt Control)/Hyper(Super + Shift) Key */ 
+
+/*  Most of hotkeys is managed through BetterTouchTool that takes advantage of Super(Meta Alt Control)/Hyper(Super + Shift) Key 
+
+*/ 
+
 ZMK_COMBO (com_undo,              &kp LG(Z),          LB1 LB2,    0) 
 ZMK_COMBO (com_redo,              &kp LG(LS(Z)),      RB1 RB2,    0) 
 
@@ -48,8 +52,8 @@ ZMK_COMBO (com_menu,              &kp LG(LS(FSLH)),   RB1 RB3,    2) // Open Men
 
 // VIM Navigation
 MAKE_HT   (ht_kp, &kp, &kp)
-ZMK_COMBO (com_vim_word_left,     &ht_kp  HOME B,     RM1 RM2,    2) // Tap to jump one word left Hold to jump to start
-ZMK_COMBO (com_vim_word_right,    &ht_kp  END E,      RM2 RM3,    2) // Tap to jump one word right Hold to jump to end
+ZMK_COMBO (com_vim_word_left,     &ht_kp  HOME B,     RM1 RM2,    2) // Tap to jump one word left   | Hold to jump to start
+ZMK_COMBO (com_vim_word_right,    &ht_kp  END E,      RM2 RM3,    2) // Tap to jump one word right  | Hold to jump to end
 
 // Layer Navigation Combo   
 ZMK_COMBO (combo_sys,             &tog 4,             LB5 RB5,    0)
