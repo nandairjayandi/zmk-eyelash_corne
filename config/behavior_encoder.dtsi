@@ -6,5 +6,17 @@
 
 // SIMPLE_MORPH(ccw_morph_arrow,   CTL, &kp DOWN, &kp LEFT)
 // SIMPLE_MORPH(cw_morph_arrow,    CTL, &kp UP, &kp RIGHT)
+// SIMPLE_MORPH(ccw_morph_arrow,   CTL, &kp DOWN, &kp LEFT)
+// SIMPLE_MORPH(cw_morph_arrow,    CTL, &kp UP, &kp RIGHT)
 
-ZMK_SENSOR_ROTATE(arrow_enc, bindings = <&kp DOWN>, <&kp UP>;)
+// ZMK_SENSOR_ROTATE(arrow_enc, bindings = <&kp DOWN>, <&kp UP>;)
+
+\ {
+    behaviors {
+        arrow_enc: arrow_enc {
+            compatible = "zmk,behavior-sensor-rotate";
+            #sensor-binding-cells = <0>;
+            bindings = <&kp DOWN>, <&kp UP>;
+        }
+    }
+}
