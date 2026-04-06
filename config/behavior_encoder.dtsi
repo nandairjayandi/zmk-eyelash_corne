@@ -6,5 +6,8 @@
 SIMPLE_MORPH(ccw_morph_arrow,   CTL, &kp DOWN, &kp LEFT)
 SIMPLE_MORPH(cw_morph_arrow,    CTL, &kp UP, &kp RIGHT)
 
+/* 
+* Default Up / Down. Hold CTRL to move left and right
+*/
 ZMK_SENSOR_ROTATE(arrow_enc, bindings = <&cw_morph_arrow>, <&ccw_morph_arrow>;)
 
