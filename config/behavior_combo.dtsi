@@ -5,10 +5,10 @@
 #include "adv_layers.dtsi"
 
 #define COMBO_TERM_FAST 18
-#define COMBO_IDLE_SLOW 30
+#define COMBO_TERM_SLOW 50
 
 #define COMBO_IDLE_FAST 150
-#define COMBO_TERM_SLOW 50
+#define COMBO_IDLE_SLOW 30
 
 /*                42 KEY MATRIX with ENCODER and JOYSTICK / LAYOUT MAPPING
   ╭────────────────────────╮             ╭────╮      ╭─────────────────────────╮
