@@ -27,33 +27,33 @@
 
 */
 
-/*        name,                 keycode,            button,     layer,      timeout(30),  prior-idle */
-ZMK_COMBO(com_semi,             &kp SEMI,           RB2 RB3,    0,          45)
-ZMK_COMBO(com_and,              &morph_and,         LB2 LB3,    0,          45)
+/*        name,                   keycode,            button,     layer,      timeout(30),  prior-idle */
+ZMK_COMBO (com_semi,              &kp SEMI,           RB2 RB3,    0,          45)
+ZMK_COMBO (com_and,               &morph_and,         LB2 LB3,    0,          45)
 
 // Num Layer Combo          
-ZMK_COMBO(com_bral,             &morph_bral,        LM2 LM3,    1)
-ZMK_COMBO(com_brar,             &morph_brar,        LM1 LM2,    1)
+ZMK_COMBO (com_bral,              &morph_bral,        LM2 LM3,    1)
+ZMK_COMBO (com_brar,              &morph_brar,        LM1 LM2,    1)
 
-ZMK_COMBO(com_capsword,         &caps_word,         LH1 RH1,    0,          60)
-ZMK_COMBO(com_esc,              &kp ESC,            LH0 RH0,    0 1 2,      80)
+ZMK_COMBO (com_capsword,          &caps_word,         LH1 RH1,    0,          60)
+ZMK_COMBO (com_esc,               &kp ESC,            LH0 RH0,    0 1 2,      80)
 
 // macOS Specific   
 /* Most of my hotkeys is managed through BetterTouchTool and takes advantage of Super(Meta Alt Control)/Hyper(Super + Shift) Key */ 
-ZMK_COMBO(com_undo,             &kp LG(Z),          LB1 LB2,    0) 
-ZMK_COMBO(com_redo,             &kp LG(LS(Z)),      RB1 RB2,    0) 
+ZMK_COMBO (com_undo,              &kp LG(Z),          LB1 LB2,    0) 
+ZMK_COMBO (com_redo,              &kp LG(LS(Z)),      RB1 RB2,    0) 
 
-ZMK_COMBO(com_char,             &kp LG(LS(SPACE)),  LT5 RT5,    0) // Character (Emoji Symbol) Selector 
-ZMK_COMBO(com_menu,             &kp LG(LS(FSLH)),   RB1 RB3,    2) // Open Menu Bar Search Menu
+ZMK_COMBO (com_char,              &kp LG(LS(SPACE)),  LT5 RT5,    0) // Character (Emoji Symbol) Selector 
+ZMK_COMBO (com_menu,              &kp LG(LS(FSLH)),   RB1 RB3,    2) // Open Menu Bar Search Menu
 
 // VIM Navigation
-MAKE_HT(ht_kp, &kp, &kp)
-ZMK_COMBO(com_vim_word_left,    &ht_kp  HOME B,     RM1 RM2,    2) // Tap to jump one word left Hold to jump to start
-ZMK_COMBO(com_vim_word_right,   &ht_kp  END E,      RM2 RM3,    2) // Tap to jump one word right Hold to jump to end
+MAKE_HT   (ht_kp, &kp, &kp)
+ZMK_COMBO (com_vim_word_left,     &ht_kp  HOME B,     RM1 RM2,    2) // Tap to jump one word left Hold to jump to start
+ZMK_COMBO (com_vim_word_right,    &ht_kp  END E,      RM2 RM3,    2) // Tap to jump one word right Hold to jump to end
 
 // Layer Navigation Combo   
-ZMK_COMBO(combo_sys,            &tog 4,             LB5 RB5,    0)
-ZMK_COMBO(combo_fn,             &tog 3,             LM5 RM5,    0)
-ZMK_COMBO(combo_home_layer,     &to 0,              LH2 RH2,    1 2 3 4)
-ZMK_COMBO(combo_number,         &tog 1,             LM5 LH1)
-ZMK_COMBO(combo_nav,            &tog 2,             RM5 RH1)
+ZMK_COMBO (combo_sys,             &tog 4,             LB5 RB5,    0)
+ZMK_COMBO (combo_fn,              &tog 3,             LM5 RM5,    0)
+ZMK_COMBO (combo_home_layer,      &to 0,              LH2 RH2,    1 2 3 4)
+ZMK_COMBO (combo_number,          &tog 1,             LM5 LH1)
+ZMK_COMBO (combo_nav,             &tog 2,             RM5 RH1)

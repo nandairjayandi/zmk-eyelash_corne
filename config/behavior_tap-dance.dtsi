@@ -1,19 +1,18 @@
 #include <behaviors.dtsi>
 #include "zmk-helpers/helper.h"
 
-ZMK_TAP_DANCE(tap_bral_one,     tapping-term-ms = <280>; bindings = <&kp LPAR>,             <&kp LBKT>;) // ( [
-ZMK_TAP_DANCE(tap_bral_two,     tapping-term-ms = <280>; bindings = <&kp LBRC>,             <&kp LT>;) // { < 
+ZMK_TAP_DANCE(tap_bral_one,     tapping-term-ms = <280>; bindings = <&kp LPAR>,             <&kp LBKT>;)                // ( | [
+ZMK_TAP_DANCE(tap_bral_two,     tapping-term-ms = <280>; bindings = <&kp LBRC>,             <&kp LT>;)                  // { | < 
 
-ZMK_TAP_DANCE(tap_brar_one,     tapping-term-ms = <280>; bindings = <&kp RPAR>,             <&kp RBKT>;) // ) ]
-ZMK_TAP_DANCE(tap_brar_two,     tapping-term-ms = <280>; bindings = <&kp RBRC>,             <&kp GT>;) // } >
+ZMK_TAP_DANCE(tap_brar_one,     tapping-term-ms = <280>; bindings = <&kp RPAR>,             <&kp RBKT>;)                // ) | ]
+ZMK_TAP_DANCE(tap_brar_two,     tapping-term-ms = <280>; bindings = <&kp RBRC>,             <&kp GT>;)                  // } | >
 
-ZMK_TAP_DANCE(tap_meh_hypr,     tapping-term-ms = <200>; bindings = <&sk LC(LA(LSHFT))>,    <&sk LC(LA(LG(LSHFT)))>;)
-#define T_SUPER     &tap_meh_hypr
+ZMK_TAP_DANCE(tap_meh_hypr,     tapping-term-ms = <200>; bindings = <&sk LC(LA(LSHFT))>,    <&sk LC(LA(LG(LSHFT)))>;)   // Ctrl+Alt+Shift | Ctrl+Alt+Shift+Meta
 
 ZMK_TAP_DANCE(tap_bluetooth,    tapping-term-ms = <200>; bindings = <&bt BT_CLR>,           <&bt BT_CLR_ALL>;)
 
-ZMK_TAP_DANCE(tap_shot_part,    tapping-term-ms = <200>; bindings = <&kp LG(LS(LC(N4)))>,   <&kp LG(LS(N4))>;)
-ZMK_TAP_DANCE(tap_shot_full,    tapping-term-ms = <200>; bindings = <&kp LG(LS(LC(N3)))>,   <&kp LG(LS(N3))>;)
+ZMK_TAP_DANCE(tap_shot_part,    tapping-term-ms = <200>; bindings = <&kp LG(LS(LC(N4)))>,   <&kp LG(LS(N4))>;)          // macOS Save to Clipboard | Save to Desktop
+ZMK_TAP_DANCE(tap_shot_full,    tapping-term-ms = <200>; bindings = <&kp LG(LS(LC(N3)))>,   <&kp LG(LS(N3))>;)          // Ibid Fullscreen
 
 ZMK_TAP_DANCE(tap_copy_cut,     tapping-term-ms = <200>; bindings = <&kp LG(C)>,            <&kp LG(X)>;)
 ZMK_TAP_DANCE(tap_paste_move,   tapping-term-ms = <200>; bindings = <&kp LG(V)>,            <&kp LG(LA(V))>;)
