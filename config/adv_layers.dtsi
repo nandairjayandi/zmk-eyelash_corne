@@ -53,4 +53,4 @@ MAKE_HT(ht_dot_fn,    &mo, &morph_dot)
 
 #define SK_STOP &kp LANG9 // Helper button to cancel Sticky Key 
 
-ZMK_CAPS_WORD(caps_word, continue-list = <BACKSPACE MINUS UNDER PERIOD SLASH PERIOD>;)
+ZMK_CAPS_WORD(caps_word, continue-list = <BACKSPACE MINUS UNDER PERIOD SLASH PERIOD>)
