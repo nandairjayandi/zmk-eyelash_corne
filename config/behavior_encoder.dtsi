@@ -11,7 +11,7 @@
 
 // ZMK_SENSOR_ROTATE(arrow_enc, bindings = <&kp DOWN>, <&kp UP>;)
 
-\ {
+/ {
     behaviors {
         arrow_enc: arrow_enc {
             compatible = "zmk,behavior-sensor-rotate";
