@@ -1,6 +1,6 @@
 parse_config:
   zmk_additional_includes:
-    - "modules/zmk/helpers/include"
+    - "zmk-helpers/include"
 
   zmk_preamble: |
     #include <zmk-helpers/key-labels/eyelash42.h>
