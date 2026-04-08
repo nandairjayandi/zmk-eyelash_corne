@@ -78,6 +78,7 @@
 /* macOS CopyPaste */
 #define T_CC        &tap_copy_cut
 #define T_PM        &tap_paste_move
+#define T_ALL       &kp LG(A)
 
 // / {
 //     keymap {
