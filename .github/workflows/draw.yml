@@ -3,8 +3,7 @@ on:
   workflow_dispatch:
   push:
     paths:
-      - "config/*.keymap"
-      - "config/*.dtsi"
+      - "config/eyelash_corne.keymap"
       - .github/workflows/draw.yml
       - keymap_drawer.config.yaml
 
