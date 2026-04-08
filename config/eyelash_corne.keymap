@@ -101,14 +101,14 @@
 
 ZMK_LAYER(GRAPHITE,
     //  ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮                  ╭──────╮         ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
-         &kp GRAVE     &kp B         &kp L         &kp D         &kp W         &kp Z                             MS_U             M_SQT        &kp F         &kp O         &kp U         &kp J            M_HASH
+        &kp GRAVE     &kp B         &kp L         &kp D         &kp W         &kp Z                             MS_U             M_SQT        &kp F         &kp O         &kp U         &kp J          M_HASH
     //  ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤           ╭──────┼──────┼──────╮  ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ 
-         L_FN        &hml LCTRL N  &hml LALT R   &hml LGUI T   &hml LSHFT S  &kp G                      MS_L   XXX  MS_R     &kp Y         &hmr RSHFT H  &hmr RGUI A   &hmr RALT E   &hmr RCTRL I     R_FN
+         L_FN         &hml LCTRL N  &hml LALT R   &hml LGUI T   &hml LSHFT S  &kp G                      MS_L   XXX  MS_R       &kp Y         &hmr RSHFT H  &hmr RGUI A   &hmr RALT E   &hmr RCTRL I   R_FN
     //  ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤  ╭──────╮ ╰──────┼──────┼──────╯  ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-         M_BRAL      &kp Q         &kp X         &kp M         &kp C         &kp V             XXX             MS_D            &kp K         &kp P          M_MIN         &kp BSLH       M_FSLH         M_BRAR 
+         M_BRAL       &kp Q         &kp X         &kp M         &kp C         &kp V             XXX             MS_D            &kp K         &kp P          M_MIN         &kp BSLH      M_FSLH        M_BRAR 
     //  ╰─────────────┴─────────────┴─────────────┼─────────────┼─────────────┼─────────────┤  ╰──────╯        ╰──────╯         ├─────────────┼─────────────┼─────────────┼─────────────┴─────────────┴─────────────╯
-                                                 T_SUPER         BSPC_NAV     &kp TAB                                            &kp ENTER      SPC_NUM      T_SUPER
-    //                                           ╰─────────────┴─────────────┴─────────────╯                                   ╰─────────────┴─────────────┴─────────────╯
+                                                  T_SUPER       BSPC_NAV      &kp TAB                                           &kp ENTER      SPC_NUM      T_SUPER
+    //                                            ╰─────────────┴─────────────┴─────────────╯                                   ╰─────────────┴─────────────┴─────────────╯
 
     , &arrow_enc
 )
